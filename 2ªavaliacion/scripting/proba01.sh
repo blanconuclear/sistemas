@@ -23,3 +23,8 @@ a=ls
 echo ‘$a’ # Amosará por pantalla $a
 echo “$a” # Amosará por pantalla ls
 echo `$a` # Amosará por pantalla o contido do directorio onde nos atopemos
+
+
+expr 2 \* 2
+echo $((2 * 2))
+echo $((3/3))
