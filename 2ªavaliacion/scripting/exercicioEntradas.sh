@@ -18,7 +18,7 @@ echo Estás conectado como: $usuarioConectado
 echo Permitímosche modificar o teu nome. Dinos por cal che gustaría cambiar o actual: $usuarioConectado
 read novoNome
 
-if [ -z $novoNome ]
+if [ $novoNome -z ]
 then
     echo "O teu nome segue igual" $usuarioConectado
 else
