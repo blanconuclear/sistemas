@@ -28,8 +28,8 @@ dividir() {
     fi
 }
 
-
-while true; do
+#Función menú
+menu() {
     echo "------ CALCULADORA ------"
     echo "1. Sumar"
     echo "2. Restar"
@@ -37,6 +37,11 @@ while true; do
     echo "4. Dividir"
     echo "5. Sair"
     echo "---------------------------"
+}
+
+
+while true; do
+    menu
 
     read -p "Selecciona unha operación (1-5): " opcion
 
