@@ -24,7 +24,8 @@ function multiplicar() {
 
 # Función dividir
 function dividir() {
-    if [ $2 -eq 0 ]; then
+    if [ $2 -eq 0 ]
+    then
         echo "Error: Non se puede dividir por cero."
     else
         resultado=$(($1 / $2))
