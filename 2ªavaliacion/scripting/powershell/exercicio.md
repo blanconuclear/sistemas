@@ -9,7 +9,7 @@ Get-Date
 2.Lista os directorios ou arquivos que hai en Windows/System32 e que o seu nome comece por w.
 
 ```
-Get-ChildItem -Path C:\Windows\System32\w*
+Get-ChildItem -Path C:\Windows\System32\w* -Recurse
 ```
 
 3.Fai a seguinte estrutura de directorios e arquivos:
