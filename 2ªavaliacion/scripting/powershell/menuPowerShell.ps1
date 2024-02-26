@@ -8,18 +8,10 @@ function menu {
     Write-Output "2. Restar"
     Write-Output "3. Multiplicar"
     Write-Output "4. Dividir"
-    Write-Output "5. Salir"
+    Write-Output "5. Mostrar archivos do directorio actual"
+    Write-Output "6. Salir"
     Write-Output "---------------------------"
-
-    Write-Output "6. Mostrar archivos do directorio actual"
 }
-
-function subMenu {
-    Write-Output "--- Elixe unha das 2 opci�ns ---"
-    Write-Output "a"
-    Write-Output "b"
-}
-
 
 
 function directorioActual {
@@ -78,7 +70,7 @@ menu
 $opcion = Read-Host "Elixe unha opción: "
 
 
-while($opcion -ne "5" ){
+while($opcion -ne "6" ){
 
 switch ($opcion) {
     "1" {
@@ -105,14 +97,14 @@ switch ($opcion) {
         Write-Output "O resultado da division: $resultado"
     }
 
-     "6" {
+     "5" {
      directorioActual
      
      }
 
     }
 
-    Start-Sleep -s 2
+    Start-Sleep -s 1
     menu
     $opcion = Read-Host "Elixe unha opción: "  
 }
